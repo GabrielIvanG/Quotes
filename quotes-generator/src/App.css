@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Zen Loop', cursive;
+}
+
+#quote-box {
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 40rem;
+  padding: 2.5rem;
+  margin: 10rem auto;
+  border-radius: 1.25rem;
+}
+
+#text {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#author {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.35rem;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+}
+
+#tweet-quote {
+  margin: 1rem;
+}
+
+#new-quote {
+  font-family: 'Zen Loop', cursive;
+  border: none;
+  padding: 0.7rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 1.25rem;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+}
+
+#new-quote:hover {
+  background-color: rgb(255, 255, 255, 0.5);
+}
