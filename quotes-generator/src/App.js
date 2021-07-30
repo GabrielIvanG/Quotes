@@ -14,9 +14,11 @@ function App() {
       );
       let randomColor = Math.floor(Math.random() * 16777215).toString(16);
       document.body.style.backgroundColor = '#' + randomColor;
-      setQuotes(quotesState.data.quotes);
-      setQuote(quotesState.data.quotes[0].quote);
-      setAuthor(quotesState.data.quotes[0].author);
+      let result = quotesState.data.quotes;
+      setQuotes(result);
+      var item = result[Math.floor(Math.random() * result.length)];
+      setQuote(item.quote);
+      setAuthor(item.author);
     }
     getQuotes();
   }, []);
